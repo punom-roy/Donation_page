@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4ff;
+}
+/* Header section */
+
+header {
+    background-color: rgba(198, 238, 213, 0.5);
+position: sticky;
+z-index: 1000;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(180, 246, 205, 0.5);
+padding-top: 20px;
+}
+.Blog{
+    margin: 10px 100px;
+}
+.balance{
+    margin: 10px 100px;
+}
+
+
+.btn{
+    border: 0px;
+padding: 12px 32px 12px 32px;
+border-radius: 8px;
+background: rgb(180, 244, 97);
+transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover{
+    background: rgb(180, 244, 97);
+    transform: scale(1.05);
+}
+
+.DB{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.DB a{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.balance{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+header .DH {
+    text-align: center;
+    padding-top: 15px;
+
+}
+header .DH .btn{
+padding: 16px 72px;
+}
+header .DH .btn-2{
+padding: 16px 72px;
+border: 0px;
+margin: 20px 0px 20px 20px;
+transition: background 0.3s, transform 0.3s;
+cursor: pointer;
+}
+header .DH .btn-2:hover{
+background: rgb(180, 244, 97);
+    cursor: pointer;
+}
