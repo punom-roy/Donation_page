@@ -3,12 +3,20 @@ body{
     padding: 0px;
     background-color: #f4f4f4ff;
 }
+.container{
+    width: 80%;
+    margin: 20px auto;
+    /* height: 20000px; */
+}
 /* Header section */
 
 header {
     background-color: rgba(198, 238, 213, 0.5);
 position: sticky;
+top: 0px;
 z-index: 1000;
+display: flex;
+flex-direction: column;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 }
@@ -37,6 +45,7 @@ transition: background 0.3s, transform 0.3s;
 }
 
 .btn:hover{
+    cursor: pointer;
     background: rgb(180, 244, 97);
     transform: scale(1.05);
 }
@@ -73,12 +82,77 @@ padding: 16px 72px;
 }
 header .DH .btn-2{
 padding: 16px 72px;
-border: 0px;
+border: 1px solid black;
+border-radius: 8px;
 margin: 20px 0px 20px 20px;
 transition: background 0.3s, transform 0.3s;
 cursor: pointer;
 }
 header .DH .btn-2:hover{
-background: rgb(180, 244, 97);
+background: grey;
+cursor: pointer;
+transform: scale(1.05);
+}
+
+/* Donation-Cards Sections */
+
+.donation_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card_inner{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 32px;
+}
+.card{
+    /* flex: 1 1 calc(30 - 20px); */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+.card_1_initial_Balance{
+    display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+}
+.card h3{
+    text-align: left;
+    margin-top: 10px;
+    color: #333;
+}
+.card p{
+    text-align: left;
+    
+}
+.donation_amount input{
+    width: calc(100% - 18px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.card_inner_2{
+    text-align: center;
+
+}
+.donation_btn{
+    /* display: inline-block; */
+    padding: 16px 72px;
+    background-color: rgb(180, 244, 97);
+    color: black;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
+.donation_btn:hover{
+    transition: background 0.3s, transform 0.3s;
+    transform: scale(1.05);
+}
+
+
