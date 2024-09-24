@@ -1,221 +1,213 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #f4f4f4ff;
-}
-.container{
-    width: 80%;
-    margin: 20px auto;
-    /* height: 20000px; */
-}
-/* Header section */
 
-header {
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+    header {
     background-color: rgba(198, 238, 213, 0.5);
-position: sticky;
-top: 0px;
-z-index: 1000;
-display: flex;
-flex-direction: column;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
-}
-.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    }
+    .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(180, 246, 205, 0.5);
-padding-top: 20px;
-}
-.Blog{
-    margin: 10px 100px;
-}
-.balance{
-    margin: 10px 100px;
-}
-
-
-.btn{
-    border: 0px;
-padding: 12px 32px 12px 32px;
-border-radius: 8px;
-background: rgb(180, 244, 97);
-transition: background 0.3s, transform 0.3s;
-}
-
-.btn:hover{
-    cursor: pointer;
-    background: rgb(180, 244, 97);
-    transform: scale(1.05);
-}
-
-.DB{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;
-}
-.DB a{
-    color: rgb(17, 17, 17);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0%;
-    text-align: left;
-}
-.balance{
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;
-}
-header .DH {
-    text-align: center;
-    padding-top: 15px;
-
-}
-header .DH .btn{
-padding: 16px 72px;
-}
-header .DH .btn-2{
-padding: 16px 72px;
-border: 1px solid black;
-border-radius: 8px;
-margin: 20px 0px 20px 20px;
-transition: background 0.3s, transform 0.3s;
-cursor: pointer;
-}
-header .DH .btn-2:hover{
-background: grey;
-cursor: pointer;
-transform: scale(1.05);
-}
-
-/* Donation-Cards Sections */
-
-.donation_cards{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.card_inner{
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 32px;
-}
-.card{
-    flex: 1 1 calc(30 - 20px);
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
-}
-.card .floods_img{
-    width: 400px;
-height: 300px;
-}
-.card_1_initial_Balance{
-    display: flex;
-flex-direction: row;
-align-items: center;
-gap: 20px;
-}
-
-.card h3{
-    text-align: left;
-    margin-top: 10px;
-    color: #333;
-}
-.card p{
-    text-align: left;
-    color: #666;
-
-    
-}
-.donation_amount input{
-    width: calc(100% - 18px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.card_inner_2{
-    text-align: center;
-
-}
-.donation_btn{
-    /* display: inline-block; */
-    padding: 16px 72px;
-    background-color: rgb(180, 244, 97);
-    color: black;
-    border: none;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.donation_btn:hover{
-    transition: background 0.3s, transform 0.3s;
-    transform: scale(1.05);
-}
-
-/* History */
-.history-item{
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-.history-item strong{
-    color: #333;
-}
-.history-item span{
-    color: #666;
+    padding-top: 20px;
     }
-.modal {
-    display: none;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    .Blog{
+        margin: 10px 100px;
+    }
+    .balance{
+        margin: 10px 100px;
+    }
+    .btn{
+        border: 0px;
+    padding: 12px 32px 12px 32px;
+    border-radius: 8px;
+    background: rgb(180, 244, 97);
+    }
+    button:hover{
+        cursor: pointer;
+        background: rgb(180, 244, 97);
+        transition: background 0.3s, transform 0.3s;
+        transform: scale(1.05);
+    }
+    
+    .DB{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-}
-h2{
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-p{
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-.success{
-    font-weight: bold;
-    color: green;
-    font-size: 18px;
-}
-button{
-    background-color: #f5f5f5;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-
-}
-button:hover{
-    background-color: #ccc;
+    gap: 20px;
     }
-
+    .DB a{
+        color: rgb(17, 17, 17);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .balance{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    .tabs {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 50px 0px 30px 0px;
+    }
+    
+    .tabs button {
+        flex: 0 1 200px;
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    
+    .tabs button.active {
+        background-color: #3AB54A;
+        color: #fff;
+        border: none;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .donation-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .card {
+        display: flex;
+        gap: 20px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-img {
+        width: 400px;
+        height: 280px;
+        border-radius: 10px;
+    }
+    .card-balance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    }
+    .card h3 {
+        margin-top: 10px;
+        color: #333;
+    }
+    
+    .card p {
+        color: #666;
+    }
+    
+    .donation-amount {
+        margin: 30px 0;
+    }
+    
+    .donation-amount input {
+        width: calc(100% - 22px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .donate-btn {
+        width: 100%;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3AB54A;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .donate-btn:hover {
+        background-color: #2d953a;
+    }
+    .history-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .history-item strong {
+        color: #333;
+    }
+    .history-item span {
+        color: #666;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .success {
+        font-weight: bold;
+        color: green;
+        font-size: 18px;
+    }
+    
+    button {
+        background-color: #f5f5f5;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #ddd;
+    }
+    
