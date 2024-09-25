@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    }
-    header {
+}
+/* Header CSS */
+header {
     background-color: rgba(198, 238, 213, 0.5);
     position: sticky;
     top: 0px;
@@ -13,241 +14,228 @@ body {
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3px);
-    }
-    .navbar{
+}
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(180, 246, 205, 0.5);
     padding: 20px 0px;
-    }
-    .Blog{
-        margin: 10px 100px;
-    }
-    .balance{
-        margin: 10px 100px;
-    }
-    .btn{
-        border: 0px;
+}
+.Blog{
+    margin: 10px 100px;
+}
+.balance{
+    margin: 10px 100px;
+}
+.btn{
+    border: 0px;
     padding: 12px 32px 12px 32px;
     border-radius: 8px;
     background: rgb(180, 244, 97);
-    }
-    button:hover{
-        cursor: pointer;
-        background: rgb(180, 244, 97);
-        transition: background 0.3s, transform 0.3s;
-        transform: scale(1.05);
-    }
-    
-    .DB{
+}
+button:hover{
+    cursor: pointer;
+    background: rgb(180, 244, 97);
+    transition: background 0.3s, transform 0.3s;
+    transform: scale(1.05);
+}
+.DB{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    }
-    .DB a{
-        color: rgb(17, 17, 17);
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-    .balance{
-        display: flex;
+}
+.DB a{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}.balance{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    }
-    .tabs {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 10px 0px 30px 0px;
-    }
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0px 30px 0px;
+}
     
-    .tabs button {
-        flex: 0 1 200px;
-        padding: 10px 20px;
-        background-color: #f4f4f4;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        text-align: center;
-        font-size: 16px;
-        margin: 0 10px;
-    }
+.tabs button {
+    flex: 0 1 200px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+}
     
-    .tabs button.active {
-        background-color: #3AB54A;
-        color: #fff;
-        border: none;
-    }
-    .container {
-        width: 80%;
-        margin: 20px auto;
-    }
-    .donation-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+.tabs button.active {
+    background-color: #3AB54A;
+    color: #fff;
+    border: none;
+}
+.container {
+width: 80%;
+margin: 20px auto;}
+.donation-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
     
-    .card {
-        display: flex;
-        gap: 20px;
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .card-img {
-        width: 400px;
-        height: 280px;
-        border-radius: 10px;
-    }
-    .card-balance{
+/* Donations Card CSS */
+.card {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card-img {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+}
+.card-balance{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+.card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+.card p {
+    color: #666;
+}
+.donation-amount {
+    margin: 30px 0;
+}
+.donation-amount input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     }
-    .card h3 {
-        margin-top: 10px;
-        color: #333;
-    }
+.donate-btn {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3AB54A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.donate-btn:hover {
+    background-color: #2d953a;
+}
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
     
-    .card p {
-        color: #666;
-    }
-    
-    .donation-amount {
-        margin: 30px 0;
-    }
-    
-    .donation-amount input {
-        width: calc(100% - 22px);
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    
-    .donate-btn {
-        width: 100%;
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #3AB54A;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-    }
-    
-    .donate-btn:hover {
-        background-color: #2d953a;
-    }
-    .history-item {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-    }
-    
-    .history-item strong {
-        color: #333;
-    }
-    .history-item span {
-        color: #666;
-    }
-    .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .modal-content {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        width: 300px;
-    }
-    
-    h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    p {
-        font-size: 16px;
-        margin-bottom: 5px;
-    }
-    
-    .success {
-        font-weight: bold;
-        color: green;
-        font-size: 18px;
-    }
-    
-    button {
-        background-color: #f5f5f5;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #ddd;
-    }
-    @media (max-width: 768px) {
-        .navbar{
-            display: flex;
-            flex-direction: column;
-        }
-        .card {
-                display: flex;
-                flex-direction: column;
-        }
-        .card-img {
-            width: 36rem;
-            height: 20rem;
-            border-radius: 10px;
-        }
-        .navbar .tabs{
-            margin: 0px;
-            padding: 0px;
-        }
+.history-item strong {
+    color: #333;
+}
+.history-item span {
+    color: #666;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.success {
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+button:hover {
+    background-color: #ddd;
+}
 
-    }
-    @media (max-width: 480px) {
-        .navbar{
-            display: flex;
-            flex-direction: column;
-        }
-        .card {
-                display: flex;
-                flex-direction: column;
-        }
-        .card-img {
-            width: 18rem;
-            height: 13rem;
-            border-radius: 10px;
-            justify-content: center;
-        }
-        .navbar .tabs{
-            margin: 0px;
-            padding: 0px;
-        }
+/* MObile Responsive Design */
+@media (max-width: 768px) {
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card-img {
+    width: 36rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+.navbar .tabs{
+    margin: 0px;
+    padding: 0px;
+}
 
-    }
+}
+@media (max-width: 480px) {
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card-img {
+    width: 18rem;
+    height: 13rem;
+    border-radius: 10px;
+    justify-content: center;
+}
+.navbar .tabs{
+    margin: 0px;
+    padding: 0px;
+}
+}

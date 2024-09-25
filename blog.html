@@ -3,70 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page for DOM</title>
+    <title>Blog Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS/style.css">
-<style>
-.qan{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top:100px ;
-}
-.qan-img{
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 10px;
-
-}
-        .accordion {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .accordion-item {
-            border-top: 1px solid #ccc;
-        }
-
-        .accordion-item:first-child {
-            border-top: none;
-        }
-
-        .accordion-label {
-            display: block;
-            padding: 15px;
-            background-color: #f7f7f7;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .accordion-label:hover {
-            background-color: #e0e0e0;
-        }
-
-        .accordion-content {
-            display: none;
-            padding: 15px;
-            background-color: white;
-            border-top: 1px solid #ccc;
-        }
-
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        input[type="checkbox"]:checked ~ .accordion-content {
-            display: block;
-        }
-</style>
+<link rel="stylesheet" href="CSS/blog.css">
 </head>
 <body>
     <header>
@@ -87,39 +29,45 @@
         </div>
     </header>
     <div class="qan">
-      <h2>Important FAQ</h2>
-      <img class="qan-img" src="Assets/Question Mark Animation.gif" alt="">
+        <h2>Important FAQ</h2>
+        <img class="qan-img" src="Assets/Question Mark Animation.gif" alt="">
     </div>
     <div class="accordion">
-      <div class="accordion-item">
-          <input type="checkbox" id="item1">
-          <label class="accordion-label" for="item1">What is the Document Object Model (DOM)?</label>
-          <div class="accordion-content">
-              <p>The DOM represents the structure of a web page, allowing developers to manipulate HTML elements and their content using programming languages like JavaScript.</p>
-          </div>
-      </div>
-  
-      <div class="accordion-item">
-          <input type="checkbox" id="item2">
-          <label class="accordion-label" for="item2">How do you select an element from the DOM?</label>
-          <div class="accordion-content">
-              <p>To select an element, you can use methods like `document.querySelector()` for single elements or `document.querySelectorAll()` for multiple elements.</p>
-          </div>
-      </div>
-  
-      <div class="accordion-item">
-          <input type="checkbox" id="item3">
-          <label class="accordion-label" for="item3">What is event delegation in the context of the DOM, and why is it useful?</label>
-          <div class="accordion-content">
-              <p>Event delegation allows you to attach an event listener to a parent element rather than individual child elements, improving performance when dealing with many elements.</p>
-          </div>
-      </div>
-      <div class="accordion-item">
-          <input type="checkbox" id="item3">
-          <label class="accordion-label" for="item3">How do you manipulate an element's attributes and styles using the DOM?</label>
-          <div class="accordion-content">
-              <p>You can use methods like `element.setAttribute()` to change attributes and `element.style` to manipulate CSS properties directly.</p>
-          </div>
-      </div>
-  </div>
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+            <input type="checkbox" id="item1">
+            <label class="accordion-label" for="item1">What is the Document Object Model (DOM)?</label>
+            <div class="accordion-content">
+                <p>The DOM represents the structure of a web page, allowing developers to manipulate HTML elements and their content using programming languages like JavaScript.</p>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+            <input type="checkbox" id="item2">
+            <label class="accordion-label" for="item2">How do you select an element from the DOM?</label>
+            <div class="accordion-content">
+                <p>To select an element, you can use methods like `document.querySelector()` for single elements or `document.querySelectorAll()` for multiple elements.</p>
+            </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+            <input type="checkbox" id="item3">
+            <label class="accordion-label" for="item3">What is event delegation in the context of the DOM, and why is it useful?</label>
+            <div class="accordion-content">
+                <p>Event delegation allows you to attach an event listener to a parent element rather than individual child elements, improving performance when dealing with many elements.</p>
+            </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+            <input type="checkbox" id="item4">
+            <label class="accordion-label" for="item4">How do you manipulate an element's attributes and styles using the DOM?</label>
+            <div class="accordion-content">
+                <p>You can use methods like `element.setAttribute()` to change attributes and `element.style` to manipulate CSS properties directly.</p>
+            </div>
+        </div>
+    </div>
 </body>
