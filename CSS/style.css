@@ -210,4 +210,44 @@ body {
     button:hover {
         background-color: #ddd;
     }
-    
+    @media (max-width: 768px) {
+        .navbar{
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+                display: flex;
+                flex-direction: column;
+        }
+        .card-img {
+            width: 36rem;
+            height: 20rem;
+            border-radius: 10px;
+        }
+        .navbar .tabs{
+            margin: 0px;
+            padding: 0px;
+        }
+
+    }
+    @media (max-width: 480px) {
+        .navbar{
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+                display: flex;
+                flex-direction: column;
+        }
+        .card-img {
+            width: 18rem;
+            height: 13rem;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .navbar .tabs{
+            margin: 0px;
+            padding: 0px;
+        }
+
+    }
